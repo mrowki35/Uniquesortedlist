@@ -19,7 +19,6 @@ struct SortedUniqueVectoredList::Bucket
 
 SortedUniqueVectoredList::SortedUniqueVectoredList(const SortedUniqueVectoredList &source):head(nullptr), tail(nullptr), bucketCount_(0), size_(0), capacity_(0)
 {
-    /// @todo zaimplementuj, szczegoly w pliku naglowkowym
     copy(source);
 
 }
