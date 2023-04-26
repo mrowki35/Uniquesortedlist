@@ -286,3 +286,15 @@ SortedUniqueVectoredList &SortedUniqueVectoredList::operator=(const SortedUnique
     }
     return *this;
 }
+
+friend std::ostream& operator<<(std::ostream& stream, const SortedUniqueVectoredList& container) {
+    stream << "[";
+    for (const auto& text : container) {
+        stream << "\"" << text << "\", ";
+    }
+    if (!container.empty()) {
+        stream.seekp(-2, std::ios_base::end);
+    }
+    stream << "]";
+    return stream;
+}
