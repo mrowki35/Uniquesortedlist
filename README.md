@@ -6,7 +6,7 @@ SortedUniqueVectoredList is a C++ class that represents a sorted and unique vect
 
 1. [Methods](#methods)
 2. [Operators](#operators)
-
+3. [Example](#example-usage)
 ## Methods
 
 ### SortedUniqueVectoredList()
